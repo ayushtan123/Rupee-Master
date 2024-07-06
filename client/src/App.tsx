@@ -4,10 +4,16 @@ import { Dashboard } from "./pages/dashboard";
 import { Auth } from "./pages/auth";
 import { FinancialRecordsProvider } from "./contexts/financial-record-context";
 import { SignedIn, SignedOut, UserButton } from "@clerk/clerk-react";
+import axios from 'axios';
 // import "./index.css"
 // import { dark } from "@clerk/themes";
 
 function App() {
+  axios.defaults.withCredentials = true;
+  const handleSubmit = (e: { preventDefault: () => void; }) => {
+    e.preventDefault();
+    axios.post('https://rupee-master-s.vercel.app/financial-records');
+  }
   return (
     <Router>
       <div className="app-container">
