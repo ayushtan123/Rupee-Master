@@ -1,9 +1,10 @@
 import express, { Request, Response } from "express";
 import FinancialRecordModel from "../schema/financial-record";
 
-const router = express.Router();
+// operations using mongo DB and express
 
-// GET all records by user ID
+const router = express.Router();   // how various operations will be responded
+
 router.get("/getAllByUserID/:userId", async (req: Request, res: Response) => {
   try {
     const userId = req.params.userId;
@@ -17,7 +18,6 @@ router.get("/getAllByUserID/:userId", async (req: Request, res: Response) => {
   }
 });
 
-// POST a new financial record
 router.post("/", async (req: Request, res: Response) => {
   try {
     const newRecordBody = req.body;
@@ -30,7 +30,6 @@ router.post("/", async (req: Request, res: Response) => {
   }
 });
 
-// PUT update a financial record by ID
 router.put("/:id", async (req: Request, res: Response) => {
   try {
     const id = req.params.id;
@@ -49,7 +48,6 @@ router.put("/:id", async (req: Request, res: Response) => {
   }
 });
 
-// DELETE a financial record by ID
 router.delete("/:id", async (req: Request, res: Response) => {
   try {
     const id = req.params.id;
