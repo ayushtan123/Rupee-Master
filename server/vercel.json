@@ -1,11 +1,16 @@
 {
-   "version": 2,
-   "name": "rupee-master-server",
-   "builds": [
-     { "src": "src/app.js", "use": "@vercel/node" }
-   ],
-   "routes": [
-     { "src": "/(.*)", "dest": "/src/app.js" }
-   ]
- }
- 
+    "version": 2,
+    "builds": [
+      {
+        "src": "src/index.ts",
+        "use": "@vercel/node"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "/src/index.ts"
+      }
+    ]
+  }
+  
