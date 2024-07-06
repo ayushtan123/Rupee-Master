@@ -10,11 +10,11 @@ const port = process.env.PORT || 3001;
 app.use(express.json());
 app.use(cors());
 
-const mongoURI: string =
+const MONGODB_URL: string =
   "mongodb+srv://sigmatandon141:dtu123456@rupeemaster.tyhtxwz.mongodb.net/?retryWrites=true&w=majority&appName=rupeemaster";
 
 mongoose
-  .connect(mongoURI)
+  .connect(MONGODB_URL)
   .then(() => console.log("MongoDB connected Lessgo!"))
   .catch((err) => console.error("Failed to Connect to MongoDB:", err));
 
