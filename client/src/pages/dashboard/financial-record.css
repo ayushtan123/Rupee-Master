@@ -1,0 +1,197 @@
+/* Centered container for the app */
+.dashboard-container {
+    width: auto;
+    overflow: hidden;
+    margin: 0 80px;
+  }
+  
+  /* General styling for headers within the app */
+  h1,
+  h2 {
+    color: #2c3e50;
+    text-align: center;
+  }
+  h2{
+    margin-bottom: -15px;
+  }
+  
+  /* Form and list container */
+  .form-container,
+  .list-container {
+    margin-bottom: 20px;
+    margin-top: 50px;
+  }
+
+  .sign-in-container{
+    margin-top: 7vh;
+    padding: 8px 0;
+    /* background-color: #B1AFFF; */
+    background-color: #37B7C3;
+    height: fit-content;
+    display: block;
+  }
+  
+  /* Common class for all buttons */
+  .button {
+    background-color: #059212;
+    color: #ffffff;
+    padding: 8px 15px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .button:hover {
+    background-color: #0fd104;
+    border-color: black;
+    
+  }
+  .button-delete {
+    background-color: #C80036;
+    color: #ffffff;
+    font-size: medium;
+    padding: 5px 5px;
+    margin: auto;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  
+  .button-delete:hover {
+    background-color: #ed002b;
+    border-color: black;
+  }
+  
+  /* Common class for all input fields and selects */
+  .input {
+    width:97%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    font-size: medium;
+    background-color: transparent;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: #3498db;
+  }
+  
+  
+  /* Labels for better readability */
+  label {
+    font-weight: 600;
+    display: block;
+    margin-bottom: 5px;
+    text-align: left;
+    margin-top: 1px;
+  }
+  
+  .table-container {
+    margin: 20px;
+    overflow-x: auto; /* Enables horizontal scrolling if the table is too wide */
+  }
+  
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 2px;
+  }
+  
+  .table th,
+  .table td {
+    padding: 12px 15px;
+    border: 1px solid #ddd; /* Light grey border for cells */
+    text-align: center;
+  }
+  
+  .table th {
+    background-color: #3498db; /* Darker blue header background */
+    color: white;
+    font-size: 16px;
+  }
+  
+  .table tbody tr:nth-child(odd) {
+    background-color: #f2f2f2; /* Zebra striping for rows, light grey */
+  }
+  
+  .table tbody tr:hover {
+    background-color: #BBE9FF; /* Light blue hover effect for rows */
+    font-weight: bold;
+  }
+
+  .s2{
+    background-color: #A3FFD6;
+    margin-top: 30px;
+    bottom: 0;
+    text-align: justify;
+    padding: 10px 40px;
+    font-size: large;
+  }
+  .s2 p{
+    margin: 15px;
+
+  }
+  .s3{
+    margin-top: 30px;
+    font-style: italic;
+    font-size: large;
+    margin-bottom: -3px;
+  }
+
+  /*Team India Animation*/
+
+  .abc123 {
+    border: 3px solid black;
+    font-size: large;
+    overflow: hidden;
+    width: 100%;
+    white-space: nowrap;
+    margin-bottom: -18px;
+    font-weight: 800;
+
+    background: linear-gradient(to right, #FF9933 33.33%, #FFFFFF 33.33%, #FFFFFF 66.66%, #138808 66.66%);
+  }
+  
+  .abc123 > div {
+    display: inline-block;
+    text-align: right;
+  
+    /* animation properties */
+    -moz-transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+    
+    -moz-animation: my-animation 15s linear infinite;
+    -webkit-animation: my-animation 15s linear infinite;
+    animation: my-animation 15s linear infinite;
+  }
+  
+  /* for Firefox */
+  @-moz-keyframes my-animation {
+    from { -moz-transform: translateX(-100%); }
+    to { -moz-transform: translateX(100%); }
+  }
+  
+  /* for Chrome */
+  @-webkit-keyframes my-animation {
+    from { -webkit-transform: translateX(-100%); }
+    to { -webkit-transform: translateX(100%); }
+  }
+  
+  @keyframes my-animation {
+    from {
+      -moz-transform: translateX(-100%);
+      -webkit-transform: translateX(-100%);
+      transform: translateX(-100%);
+    }
+    to {
+      -moz-transform: translateX(100%);
+      -webkit-transform: translateX(100%);
+      transform: translateX(100%);
+    }
+  }
+  

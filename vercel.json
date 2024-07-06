@@ -1,0 +1,12 @@
+{
+    "projects": {
+      "client": {
+        "root": "client"
+      },
+      "server": {
+        "root": "server",
+        "functions": "src/api"
+      }
+    }
+  }
+  
