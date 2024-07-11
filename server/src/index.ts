@@ -19,8 +19,7 @@ app.use(cors(
 app.get("/", (req,res)=>{
   res.json("Hello");
 })
-const MONGODB_URL: string =
-  "mongodb+srv://sigmatandon141:dtu123456@rupeemaster.tyhtxwz.mongodb.net/?retryWrites=true&w=majority&appName=rupeemaster";
+const MONGODB_URL: string="your_mongodb_api";
 
 mongoose
   .connect(MONGODB_URL)
